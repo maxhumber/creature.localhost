@@ -1,8 +1,8 @@
-### 🐉 creature.local
+### 🐉 creature.localhost
 
 Demo Flask App for the [Web Scraping with Python](/) Katacoda Scenarios
 
-Instructions:
+**Instructions**
 
 ```
 pip install -r requirements.txt
