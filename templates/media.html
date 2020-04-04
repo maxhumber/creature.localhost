@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<article>
+  <aside>
+    <h2>Media Demo</h2>
+  </aside>
+  <br/>
+</article>
+<section>
+    <aside>
+      <h4 align="center">Euryale</h4>
+      <img src="{{ url_for('static', filename='euryale.png') }}"/>
+      <p align="center"><i>About</i></p>
+      <p align="center"><small>A scream that can kill</small></p>
+    </aside>
+    <aside>
+      <h4 align="center">Medusa</h4>
+      <img src="{{ url_for('static', filename='medusa.png') }}"/>
+      <p align="center"><i>About</i></p>
+      <audio controls>
+        <source src="{{url_for('static', filename='medusa.mp3')}}" type="audio/mpeg">
+      </audio>
+    </aside>
+    <aside>
+      <h4 align="center">Stheno</h4>
+      <video width="300" autoplay loop>
+         <source src="{{url_for('static', filename='stheno.mp4')}}" type="video/mp4">
+      </video>
+      <p align="center"><i>About</i></p>
+      <p align="center"><small>Most murderous of the sisters</small></p>
+    </aside>
+</section>
+{% endblock %}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Demo Website</title>
+  <link rel="stylesheet" href="https://andybrewer.github.io/mvp/mvp.css">
+  <style>
+    nav {
+      margin-bottom: 2rem;
+    }
+    button {
+      padding: 0.6rem 0.6rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li>
+        {% if is_logged_in() %}
+        <a href="{{url_for('simplelogin.logout')}}">Logout</a>
+        {% else %}
+        <a href="{{url_for('simplelogin.login')}}">Login</a>
+        {% endif %}
+        </li>
+      </ul>
+    </nav>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

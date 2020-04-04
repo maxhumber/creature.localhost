@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+  <form action="{{ url_for('simplelogin.login') }}" method="post">
+    {{ form.csrf_token }}
+    <div>Username {{ form.username }}</div>
+    <div>Password {{ form.password }}</div>
+    {% if next %}<input type="hidden" name="next" value="{{next}}">{% endif %}
+   <button type="submit" value="Submit">Submit</button>
+  </form>
+{% endblock %}
