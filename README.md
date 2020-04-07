@@ -1,6 +1,6 @@
 ### 🐉 scrape.localhost
 
-Demo Flask App for [Web Scraping with Python](/)
+Flask App for Web Scraping Locally
 
 **Instructions**
 
