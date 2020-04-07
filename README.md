@@ -1,6 +1,6 @@
-### 🐉 creature.localhost
+### 🐉 scrape.localhost
 
-Demo Flask App for the [Web Scraping with Python](/) Katacoda Scenarios
+Demo Flask App for [Web Scraping with Python](/)
 
 **Instructions**
 
