@@ -21,3 +21,9 @@ def parse_tr(tr):
     return name, habitat
 
 [parse_tr(tr) for tr in trs]
+
+####
+
+import pandas as pd
+
+df = pd.read_html(str(table))[0]
