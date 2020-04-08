@@ -5,6 +5,8 @@ html = get(url)
 
 soup = Soup(html)
 
+soup.find("td", {'class': "creature-name"})
+
 table = soup.find("table")
 trs = table.find("tr")[1:]
 
